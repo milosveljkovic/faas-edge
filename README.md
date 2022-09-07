@@ -7,7 +7,7 @@ SmartHome app deployed in openwhisk as a set of actions
 2. port forward owdev-nginx
 3. config wks
 
-## Actions & FaasEdgr Architecture
+## Actions & FaasEdge Architecture
 
 This section will describe all the actions briefly.
 At the bottom of section the `faas` diagtam will be posted.
@@ -43,7 +43,7 @@ Start minikube:
 minikube start --addons=ingress
 ```
 
-port-forward owdev nginx:
+Port-forward owdev nginx:
 
 ```sh
 kubectl port-forward svc/owdev-nginx -n openwhisk 8080:80
