@@ -43,7 +43,7 @@ Create sequnce
 wsk action create prst --sequence processingv010,storingv005
 ```
 
-Trigger sequnce
+Trigger sequnce:
 ```sh
 curl -u "789c46b1-71f6-4ed5-8c54-816aa4f8c502:abczO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP" \
  "http://localhost:8080/api/v1/namespaces/_/actions/prst?blocking=true&result=true" \
@@ -56,12 +56,20 @@ curl -u "789c46b1-71f6-4ed5-8c54-816aa4f8c502:abczO3xZCLrMN6v2BKK1dXYFpXlPkccOFq
 Main functionality of this action is to generate monthy report of `Energy Consumption`.
 So this action has been connected to trigger.
 
-Action generate report and sends it to user's mails:
-
-![image](https://user-images.githubusercontent.com/47954575/189460430-f5af0d6f-4c4a-4f94-8a7f-ed04f7004e8d.png)
+Action generate report like the following:
 
 
 How do we execute RA monthly? Using `CronJob` in k8s.
+
+
+#### Controller Action (CA)
+
+This actions should allow user to turn on/off SAVE mode to provide more efficient energy consumtion.
+
+#### Device Reader
+
+This is a small app that collect all the data from devices and send it to edge system for advanced EDGE processing/reporting/alerting.
+This app define `SAVE_MODE` on app (its False by default).
 
 ## Development
 
