@@ -56,7 +56,9 @@ curl -u "789c46b1-71f6-4ed5-8c54-816aa4f8c502:abczO3xZCLrMN6v2BKK1dXYFpXlPkccOFq
 Main functionality of this action is to generate monthy report of `Energy Consumption`.
 So this action has been connected to trigger.
 
-Action generate report like the following:
+Action generate report and sends it to user's mails:
+
+![image](https://user-images.githubusercontent.com/47954575/189460430-f5af0d6f-4c4a-4f94-8a7f-ed04f7004e8d.png)
 
 
 How do we execute RA monthly? Using `CronJob` in k8s.
