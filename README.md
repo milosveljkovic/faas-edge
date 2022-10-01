@@ -71,6 +71,11 @@ This actions should allow user to turn on/off SAVE mode to provide more efficien
 This is a small app that collect all the data from devices and send it to edge system for advanced EDGE processing/reporting/alerting.
 This app define `SAVE_MODE` on app (its False by default).
 
+Architectural diagram:
+
+![image](https://user-images.githubusercontent.com/47954575/193412243-2c90d3eb-b56b-45c1-8daa-d9ab56f4e179.png)
+
+
 ## Development
 
 #### Useful commands
